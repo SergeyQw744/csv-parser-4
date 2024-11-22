@@ -1,19 +1,33 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvException;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args) throws FileNotFoundException {
+        String csvFilePath = "csv/foreign_names.csv";
+        List<List<String>> dataList = new ArrayList<>();
+        try(CSVReader csvReader = new CSVReader(new FileReader(csvFilePath))){
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+            String[] nextLine;
+            while ((nextLine = csvReader.readNext()) != null) {
+                dataList.add(Arrays.asList(nextLine));
+            }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        } catch (IOException | CsvException e) {
+            e.printStackTrace();
+        }
+
+        for (List<String> line : dataList) {
+            System.out.println(line);
         }
     }
 }
