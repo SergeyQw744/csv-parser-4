@@ -1,18 +1,21 @@
 package org.example.entity;
 
+import java.util.UUID;
+
 public class Division {
-    private int id;
+    private UUID id;
     private String name;
 
     public Division(String name) {
         this.name = name;
+        this.id = UUID.randomUUID();
     }
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 

@@ -49,7 +49,6 @@ public class Person {
             return this;
         }
 
-        // Метод для создания экземпляра Person
         public Person build() {
             return new Person(this);
         }
