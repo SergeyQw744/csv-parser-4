@@ -111,4 +111,16 @@ public class Person {
     public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birthDate=" + birthDate +
+                ", division=" + division +
+                ", salary=" + salary +
+                '}';
+    }
 }
