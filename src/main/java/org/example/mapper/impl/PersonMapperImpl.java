@@ -9,8 +9,20 @@ import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
+/**
+ * Класс PersonMapperImpl
+ * Этот класс реализует интерфейс PersonMapper.
+ * Предназначен для перевода данных о человеке из строки в объект класса Person.
+ * Этот класс имеет один публичный метод
+ * @see #convertStringToPerson(String personString)
+ */
 public class PersonMapperImpl implements PersonMapper {
 
+    /**
+     * Метод convertStringToPerson(String personString)
+     * Метод принимает на вход строковое представление человека и возвращает объект класса
+     * Person. Сначала подающаяся на вход строка делится на составные части - значения полей.
+     */
     @Override
     public Person convertStringToPerson(String personString) throws ParseException {
         String[] tokens = personString.replace("[", "")

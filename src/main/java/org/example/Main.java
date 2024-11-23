@@ -2,7 +2,7 @@ package org.example;
 
 
 import org.example.entity.Person;
-import org.example.parser.CSVParserImpl;
+import org.example.parser.impl.CSVParserImpl;
 
 import java.util.List;
 
