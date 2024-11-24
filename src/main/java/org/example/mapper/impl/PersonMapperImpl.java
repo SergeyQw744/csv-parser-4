@@ -22,6 +22,12 @@ public class PersonMapperImpl implements PersonMapper {
      * Метод convertStringToPerson(String personString)
      * Метод принимает на вход строковое представление человека и возвращает объект класса
      * Person. Сначала подающаяся на вход строка делится на составные части - значения полей.
+     * Дальше делается проверка на количество токенов, которых должно быть 6. Также мы создаем
+     * объект, который необходимо будет вернуть, также парсим числовые данные и дату. Дата
+     * парсится при помощи класса SimpleDateFormat. Если в процессе анализа строки возникает
+     * проблема сопоставления данных из строки с объектом выбрасывается исключение CSVMapperException.
+     * @param personString данные о человеке в виде строки
+     * @throws CSVMapperException выбрасывается при ошибке парсинга
      */
     @Override
     public Person convertStringToPerson(String personString) throws ParseException {

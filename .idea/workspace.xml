@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dd45c2e-47b0-44c0-8a46-6fc18c49a815" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CSVParser/CSVParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CSVParser/csv/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/mapper/PersonMapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/exception/CSVMapperException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/CSVMapperException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mapper/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mapper/PersonMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/mapper/impl/PersonMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/mapper/impl/PersonMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parser/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parser/CSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parser/CSVParserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parser/impl/CSVParserImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +46,7 @@
       <recent name="C:\Users\111\IdeaProjects\csv-parser-4\csv" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CSVParserTest.testCSVParse_returnedListPerson">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="csv-parser-4" />
@@ -63,8 +60,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CSVParserTest.testCSVParse_returnedListPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csv-parser-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CSVParser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CSVParser" />
+      <option name="MAIN_CLASS_NAME" value="CSVParser.CSVParserTest" />
+      <option name="METHOD_NAME" value="testCSVParse_returnedListPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonMapperTest.testMapStringDataToPerson_returnedPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csv-parser-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.PersonMapperTest" />
+      <option name="METHOD_NAME" value="testMapStringDataToPerson_returnedPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonMapperTest.testMapStringDataToPerson_throwsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="csv-parser-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.PersonMapperTest" />
+      <option name="METHOD_NAME" value="testMapStringDataToPerson_throwsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CSVParserTest.testCSVParse_returnedListPerson" />
+        <item itemvalue="JUnit.PersonMapperTest.testMapStringDataToPerson_throwsException" />
+        <item itemvalue="JUnit.PersonMapperTest.testMapStringDataToPerson_returnedPerson" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -118,13 +166,22 @@
       <option name="project" value="LOCAL" />
       <updated>1732361625940</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="4">
+      <option name="closed" value="true" />
+      <created>1732403359354</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732403359354</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
   </component>
 </project>
